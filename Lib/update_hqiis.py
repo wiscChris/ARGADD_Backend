@@ -1,6 +1,17 @@
+from arcpy import ExcelToTable_conversion, env
 from config.config import Config
 
-location = Config().get("database_connection_path")
 
+# TODO map input to somewhere
+raw_hqiis = ""
+hqiis_location = Config()["database_connection_path"] + "\\HQIIS"
 
-print Config().set("database_connection_path", "poop")
+env.overwriteOutput = True
+
+try:
+    ExcelToTable_conversion(raw_hqiis, hqiis_location)
+except:
+    # TODO implement error catching
+    pass
+
+env.overwriteOutput = False

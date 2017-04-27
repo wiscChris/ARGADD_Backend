@@ -1,9 +1,16 @@
 <?xml version="1.0" ?><parameters>
     <server>
-        <database_connection_path>poop</database_connection_path>
-
+        <dashboard_database>C:\ARGADD_Backend\Test_Data\DashboardDatabase_DEBUG_conntection.sde</dashboard_database>
+        <in_data>Database Servers\QSI-LAPTOP-120_DEFAULT_INSTANCE.gds\DEFAULT_63rd_RSC_ALL (VERSION:DBO.DEFAULT)</in_data>
     </server>
     <tool>
-
+        <logs_directory>C:\ARGADD_Backend\Logs</logs_directory>
     </tool>
+    <dashboard_schema>
+        <hqiis>HQIIS</hqiis>
+        <qap_fields_cip>QAP_Fields_CIP_ALL</qap_fields_cip>
+        <qap_fields_common>QAP_Fields_Common</qap_fields_common>
+        <field_quality>Field_Quality</field_quality>
+        <catcodes>CATCODES_CurrentUse</catcodes>
+    </dashboard_schema>
 </parameters>
