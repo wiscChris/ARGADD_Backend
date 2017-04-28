@@ -1,7 +1,7 @@
 <?xml version="1.0" ?><parameters>
     <server>
         <dashboard_database>C:\ARGADD_Backend\Test_Data\DashboardDatabase_DEBUG_conntection.sde</dashboard_database>
-        <in_data>Database Servers\QSI-LAPTOP-120_DEFAULT_INSTANCE.gds\DEFAULT_63rd_RSC_ALL (VERSION:DBO.DEFAULT)</in_data>
+        <in_data>Database Servers\QSI-LAPTOP-120_DEFAULT_INSTANCE.gds\TEST_63rd_Data (VERSION:DBO.DEFAULT)</in_data>
     </server>
     <tool>
         <logs_directory>C:\ARGADD_Backend\Logs</logs_directory>

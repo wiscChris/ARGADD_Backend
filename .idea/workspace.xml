@@ -1,15 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6147d25-2a3a-4ded-b8b6-1889a52b5bb5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Exceptions.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Kick_users.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/check_quality.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/tool_logging.py" />
+    <list default="true" id="d6147d25-2a3a-4ded-b8b6-1889a52b5bb5" name="Default" comment="added pathos, and multiprocessing to">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/_ppserver_config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/abstract_launcher.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/helpers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/helpers/mp_helper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/helpers/pp_helper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/hosts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/info.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/mp_map.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/multiprocessing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/parallel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/pools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/portpicker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/pp.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/pp_map.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/profile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/python.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/secure/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/secure/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/secure/copier.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/secure/tunnel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/selector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/serial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/server.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/threading.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/xmlrpc/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/pathos/xmlrpc/server.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/update_hqiis.py" afterPath="$PROJECT_DIR$/Lib/update_hqiis.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.py" afterPath="$PROJECT_DIR$/config/config.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Exceptions.py" afterPath="$PROJECT_DIR$/Lib/Exceptions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/check_quality.py" afterPath="$PROJECT_DIR$/Lib/check_quality.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/tool_logging.py" afterPath="$PROJECT_DIR$/Lib/tool_logging.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.xml" afterPath="$PROJECT_DIR$/config/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
@@ -29,8 +55,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+            <state relative-caret-position="506">
+              <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -38,33 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check_quality.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Lib/check_quality.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2017427.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Logs/Errors/2017427.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Exceptions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,9 +77,26 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="check_quality.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lib/check_quality.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="134" column="71" lean-forward="true" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+                <element signature="e#405#532#0" expanded="false" />
+                <element signature="e#575#1358#0" expanded="false" />
+                <element signature="e#1429#2259#0" expanded="false" />
+                <element signature="e#2325#4655#0" expanded="false" />
+                <element signature="e#7748#8053#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,6 +110,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>except</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -101,10 +127,11 @@
         <option value="$PROJECT_DIR$/Logs/log.log" />
         <option value="$PROJECT_DIR$/config/config.py" />
         <option value="$PROJECT_DIR$/Logs/Completed/2017425.log" />
-        <option value="$PROJECT_DIR$/Lib/Exceptions.py" />
         <option value="$PROJECT_DIR$/Logs/Errors/2017425.log" />
-        <option value="$PROJECT_DIR$/Lib/tool_logging.py" />
         <option value="$PROJECT_DIR$/Lib/Kick_users.py" />
+        <option value="$PROJECT_DIR$/Lib/tool_logging.py" />
+        <option value="$PROJECT_DIR$/Lib/Exceptions.py" />
+        <option value="C:/Program Files (x86)/ArcGIS/Desktop10.3/arcpy/arcpy/da.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config/config.xml" />
         <option value="$PROJECT_DIR$/Lib/check_quality.py" />
@@ -187,6 +214,10 @@
               <option name="myItemId" value="Logs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Errors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -199,10 +230,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Errors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,6 +254,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/ServerAdmin" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -466,11 +494,19 @@
       <option name="presentableId" value="Default" />
       <updated>1492800231465</updated>
     </task>
+    <task id="LOCAL-00001" summary="backup 4/27/2017, field quality">
+      <created>1493323856822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1493323856822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -478,9 +514,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827103" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22209695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11105236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22209695" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11105236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17023675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -495,6 +531,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="backup 4/27/2017, field quality" />
+    <option name="LAST_COMMIT_MESSAGE" value="backup 4/27/2017, field quality" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -555,14 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Logs/Completed/2017427.log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -581,48 +613,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.xml">
+    <entry file="file://$PROJECT_DIR$/Logs/Information/2017427.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Logs/Errors/2017427.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="-2645">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/tool_logging.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="33" column="25" lean-forward="true" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/1377167382/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="2577" column="8" lean-forward="false" selection-start-line="2577" selection-start-column="8" selection-end-line="2577" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.3/arcpy/arcpy/da.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/ArcGIS/Desktop10.3/arcpy/arcpy/mapping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/Errors/2017428.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="23" column="37" lean-forward="false" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Lib/check_quality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="67" column="37" lean-forward="true" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
+        <state relative-caret-position="440">
+          <caret line="134" column="71" lean-forward="true" selection-start-line="134" selection-start-column="71" selection-end-line="134" selection-end-column="71" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#405#532#0" expanded="false" />
+            <element signature="e#575#1358#0" expanded="false" />
+            <element signature="e#1429#2259#0" expanded="false" />
+            <element signature="e#2325#4655#0" expanded="false" />
+            <element signature="e#7748#8053#0" expanded="false" />
           </folding>
         </state>
       </provider>
