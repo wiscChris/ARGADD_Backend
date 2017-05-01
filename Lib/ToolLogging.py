@@ -1,6 +1,7 @@
-import os
 import logging
+import os
 from datetime import datetime
+
 from config.config import Config
 
 __time_now = datetime.now()
@@ -16,9 +17,16 @@ for lf in log_folder_dir_list:
     except OSError:
         pass
 
+loggers = {}
 
 def critical_info():
-    logger = logging.getLogger('ARGADD_errors')
+    global loggers
+
+    logger_name = 'ARGADD_errors'
+
+    if loggers.get(logger_name):
+        return True
+    logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
 
     fh = logging.FileHandler(
@@ -29,14 +37,25 @@ def critical_info():
     formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     fh.setFormatter(formatter)
     ch.setFormatter(formatter)
+    if not logger.handlers:
+        logger.addHandler(fh)
+        logger.addHandler(ch)
 
-    logger.addHandler(fh)
-    logger.addHandler(ch)
+    logger.propagate = False
+    loggers.update(dict(name=logger_name))
+
     return True
 
 
 def complete_run():
-    logger = logging.getLogger('ARGADD_complete')
+    global loggers
+
+    logger_name = 'ARGADD_complete'
+
+    if loggers.get(logger_name):
+        return True
+
+    logger = logging.getLogger(logger_name)
     logger.setLevel(logging.DEBUG)
 
     fh = logging.FileHandler(
@@ -50,4 +69,6 @@ def complete_run():
 
     logger.addHandler(fh)
     logger.addHandler(ch)
+
+    loggers.update(dict(name=logger_name))
     return True

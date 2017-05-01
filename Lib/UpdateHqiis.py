@@ -1,6 +1,6 @@
 from arcpy import ExcelToTable_conversion, env
-from config.config import Config
 
+from config.config import Config
 
 # TODO map input to somewhere
 raw_hqiis = ""

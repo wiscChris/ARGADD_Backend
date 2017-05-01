@@ -12,5 +12,6 @@
         <qap_fields_common>QAP_Fields_Common</qap_fields_common>
         <field_quality>Field_Quality</field_quality>
         <catcodes>CATCODES_CurrentUse</catcodes>
+        <needs>Web_Map\Needs</needs>
     </dashboard_schema>
 </parameters>
