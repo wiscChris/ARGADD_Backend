@@ -30,7 +30,7 @@ def critical_info():
     logger.setLevel(logging.DEBUG)
 
     fh = logging.FileHandler(
-        filename=__error_folder + os.sep + str(__time_now.year) + str(__time_now.month) + str(__time_now.day) + ".log")
+        filename=__error_folder + os.sep + str(__time_now.year) + "." + str(__time_now.month) + "." + str(__time_now.day) + ".log")
 
     ch = logging.StreamHandler()
 
@@ -59,7 +59,7 @@ def complete_run():
     logger.setLevel(logging.DEBUG)
 
     fh = logging.FileHandler(
-        filename=__complete_folder + os.sep + str(__time_now.year) + str(__time_now.month) + str(__time_now.day) + ".log")
+        filename=__complete_folder + os.sep + str(__time_now.year) + "." + str(__time_now.month) + "." + str(__time_now.day) + ".log")
 
     ch = logging.StreamHandler()
 

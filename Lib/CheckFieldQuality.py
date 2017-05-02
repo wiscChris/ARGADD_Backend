@@ -12,7 +12,7 @@ config = Config()
 
 def log():
     critical_info()
-    error_logging = logging.getLogger('ARGADD_errors.main.check_quality')
+    error_logging = logging.getLogger('ARGADD_errors.main.CheckFieldQuality')
     return error_logging
 
 

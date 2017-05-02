@@ -25,7 +25,8 @@ def main():
         KickUsers.kick(dashboard_db)
         # TODO turned off for debugging other modules
         # CheckFieldQuality.FieldAnalysis(usar_data)
-        CheckForNeeds.HQIIS(usar_data)
+        needs_check = CheckForNeeds.HQIIS(usar_data)
+        needs_check.curse()
     except InaccessibleData as e:
         log.exception(e.message)
     except Exit:

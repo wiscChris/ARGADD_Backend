@@ -1,4 +1,5 @@
-<?xml version="1.0" ?><parameters>
+<?xml version="1.0" ?>
+<parameters>
     <server>
         <dashboard_database>C:\ARGADD_Backend\Test_Data\DashboardDatabase_DEBUG_conntection.sde</dashboard_database>
         <in_data>Database Servers\QSI-LAPTOP-120_DEFAULT_INSTANCE.gds\TEST_63rd_Data (VERSION:DBO.DEFAULT)</in_data>
@@ -8,6 +9,7 @@
     </tool>
     <dashboard_schema>
         <hqiis>HQIIS</hqiis>
+        <sites>Web_Map\Sites</sites>
         <qap_fields_cip>QAP_Fields_CIP_ALL</qap_fields_cip>
         <qap_fields_common>QAP_Fields_Common</qap_fields_common>
         <field_quality>Field_Quality</field_quality>
