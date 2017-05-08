@@ -1,10 +1,10 @@
 import logging
 
-from arcpy import AcceptConnections, Exists
+from arcpy import AcceptConnections
 
 from Lib import KickUsers, ToolLogging, CheckForNeeds
 from Lib.Exceptions import *
-from config.config import Config
+from config.config import Config, CheckConfig
 
 config = Config()
 
@@ -16,21 +16,27 @@ def main():
         return error_logging
     log = log()
 
-    dashboard_db = config["dashboard_database"]
-    usar_data = config["in_data"]
+
     try:
-        if not Exists(usar_data):
-            raise InaccessibleData("Usar input data is not accessible.")
+        CheckConfig()
+
+        # Set params
+        dashboard_db = config["dashboard_database"]
+        usar_data = config["in_data"]
+
+        # Prepare database for editing
         AcceptConnections(dashboard_db, False)
         KickUsers.kick(dashboard_db)
+
+        # Do analysis
         # TODO turned off for debugging other modules
         # CheckFieldQuality.FieldAnalysis(usar_data)
+
         needs_check = CheckForNeeds.HQIIS(usar_data)
         needs_check.curse()
-    except InaccessibleData as e:
-        log.exception(e.message)
+
     except Exit:
-        pass
+        log.exception("Critical Error occured. Tools did not complete. Check log!")
     except Exception as e:
         log.exception(e)
     else:

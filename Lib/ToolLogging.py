@@ -19,6 +19,7 @@ for lf in log_folder_dir_list:
 
 loggers = {}
 
+
 def critical_info():
     global loggers
 

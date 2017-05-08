@@ -1,7 +1,7 @@
 import logging
 
 from arcpy import ListDatasets, ListFeatureClasses, ListFields, Describe, DomainToTable_management, \
-    AddFieldDelimiters, env, MakeTableView_management, Exists
+    AddFieldDelimiters, env, MakeTableView_management
 from arcpy.da import SearchCursor, UpdateCursor, Editor, InsertCursor
 
 from Exceptions import *
@@ -47,18 +47,11 @@ class FieldAnalysis(object):
             self.log = log()
             env.overwriteOutput = True
             self.in_db = in_db
-            if not Exists(self.in_db):
-                raise InaccessibleData("The input data is inaccessible.")
             self.db = config["dashboard_database"]
             self.__attributes = []
             self.__fc = ''
             self.__all_fields = Fields(self.db)
             self.out_table = '\\'.join([self.db, config["field_quality"]])
-            if Exists(self.out_table):
-                self.checker()
-            else:
-                raise InaccessibleData(
-                    "There is a bad file path to the dashboard database.\nField quality check did not run.")
         except InaccessibleData as e:
             self.log.exception(e.message)
             raise Exit()

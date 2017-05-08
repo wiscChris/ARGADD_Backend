@@ -7,7 +7,7 @@
     <tool>
         <logs_directory>C:\ARGADD_Backend\Logs</logs_directory>
     </tool>
-    <dashboard_schema>
+    <dashboard>
         <hqiis>HQIIS</hqiis>
         <sites>Web_Map\Sites</sites>
         <qap_fields_cip>QAP_Fields_CIP_ALL</qap_fields_cip>
@@ -15,5 +15,5 @@
         <field_quality>Field_Quality</field_quality>
         <catcodes>CATCODES_CurrentUse</catcodes>
         <needs>Web_Map\Needs</needs>
-    </dashboard_schema>
+    </dashboard>
 </parameters>

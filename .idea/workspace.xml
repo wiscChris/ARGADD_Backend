@@ -5,7 +5,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/CheckFieldQuality.py" afterPath="$PROJECT_DIR$/Lib/CheckFieldQuality.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/CheckForNeeds.py" afterPath="$PROJECT_DIR$/Lib/CheckForNeeds.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Exceptions.py" afterPath="$PROJECT_DIR$/Lib/Exceptions.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/ToolLogging.py" afterPath="$PROJECT_DIR$/Lib/ToolLogging.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.py" afterPath="$PROJECT_DIR$/config/config.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.xml" afterPath="$PROJECT_DIR$/config/config.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
     </list>
@@ -25,8 +27,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+            <state relative-caret-position="603">
+              <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
               </folding>
@@ -37,15 +39,25 @@
       <file leaf-file-name="CheckForNeeds.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Lib/CheckForNeeds.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+            <state relative-caret-position="1122">
+              <caret line="141" column="30" lean-forward="true" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#534#2526#0" expanded="false" />
-                <element signature="e#3170#3986#0" expanded="false" />
-                <element signature="e#4047#4990#0" expanded="false" />
-                <element signature="e#5041#5355#0" expanded="false" />
+                <element signature="e#491#2361#0" expanded="false" />
+                <element signature="e#3005#4269#0" expanded="false" />
+                <element signature="e#4330#5460#0" expanded="false" />
+                <element signature="e#6028#6632#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ToolLogging.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lib/ToolLogging.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,9 +65,14 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="106" />
-              <folding />
+            <state relative-caret-position="374">
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <marker date="1494269992575" expanded="true" signature="48:730" ph="..." />
+                <marker date="1494269992575" expanded="true" signature="48:283" ph="..." />
+                <marker date="1494269992575" expanded="true" signature="307:372" ph="..." />
+                <marker date="1494269992575" expanded="true" signature="399:730" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,23 +80,9 @@
       <file leaf-file-name="Exceptions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="352">
+              <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CheckFieldQuality.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Lib/CheckFieldQuality.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-                <element signature="e#3029#5514#0" expanded="false" />
-                <element signature="e#8229#8532#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -112,20 +115,22 @@
         <option value="$PROJECT_DIR$/Lib/update_hqiis.py" />
         <option value="$PROJECT_DIR$/Lib/logging.py" />
         <option value="$PROJECT_DIR$/Logs/log.log" />
-        <option value="$PROJECT_DIR$/config/config.py" />
         <option value="$PROJECT_DIR$/Logs/Completed/2017425.log" />
         <option value="$PROJECT_DIR$/Logs/Errors/2017425.log" />
         <option value="$PROJECT_DIR$/Lib/Kick_users.py" />
         <option value="C:/Program Files (x86)/ArcGIS/Desktop10.3/arcpy/arcpy/da.py" />
         <option value="$PROJECT_DIR$/Logs/Errors/2017428.log" />
         <option value="$PROJECT_DIR$/Logs/Errors/201751.log" />
-        <option value="$PROJECT_DIR$/Lib/Exceptions.py" />
         <option value="$PROJECT_DIR$/Lib/tool_logging.py" />
         <option value="$PROJECT_DIR$/Lib/check_quality.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/Lib/CheckFieldQuality.py" />
+        <option value="$PROJECT_DIR$/report_notes" />
+        <option value="$PROJECT_DIR$/Lib/Exceptions.py" />
         <option value="$PROJECT_DIR$/Lib/ToolLogging.py" />
+        <option value="$PROJECT_DIR$/__init__.py" />
         <option value="$PROJECT_DIR$/config/config.xml" />
+        <option value="$PROJECT_DIR$/config/config.py" />
+        <option value="$PROJECT_DIR$/Lib/CheckFieldQuality.py" />
+        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Lib/CheckForNeeds.py" />
       </list>
     </option>
@@ -188,7 +193,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Test_Data" />
+              <option name="myItemId" value="Logs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Errors" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -227,7 +236,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/SDSFIE_3_1_ArmyAdaptation_v_1_4_ULS_v1_1.fxl" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.documentation.PythonDocumentationConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -489,7 +498,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493670411015</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="optimized checkforneeds">
+      <created>1493757840077</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493757840077</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -511,7 +527,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32807216" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2581736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2581736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11105236" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17023675" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -534,7 +550,8 @@
     <MESSAGE value="backup 4/27/2017, field quality" />
     <MESSAGE value="added pathos, and multiprocessing to check_quality" />
     <MESSAGE value="removed pathos, removed multiprocessing, added check for needs, fixed double logging issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed pathos, removed multiprocessing, added check for needs, fixed double logging issue" />
+    <MESSAGE value="optimized checkforneeds" />
+    <option name="LAST_COMMIT_MESSAGE" value="optimized checkforneeds" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -542,7 +559,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="28" />
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -563,10 +580,10 @@
           <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#534#2526#0" expanded="false" />
-            <element signature="e#3170#3986#0" expanded="false" />
-            <element signature="e#4047#4990#0" expanded="false" />
-            <element signature="e#5041#5355#0" expanded="false" />
+            <element signature="e#491#2361#0" expanded="false" />
+            <element signature="e#3005#4269#0" expanded="false" />
+            <element signature="e#4330#5460#0" expanded="false" />
+            <element signature="e#6028#6632#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,7 +592,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1494269992575" expanded="true" signature="48:730" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="48:283" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="307:372" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="399:730" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -593,8 +615,8 @@
           <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3029#5514#0" expanded="false" />
-            <element signature="e#8229#8532#0" expanded="false" />
+            <element signature="e#2671#5156#0" expanded="false" />
+            <element signature="e#7871#8174#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -617,6 +639,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-162">
           <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -631,6 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,16 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="304" column="0" lean-forward="false" selection-start-line="304" selection-start-column="0" selection-end-line="304" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -695,21 +710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python27/ArcGIS10.3/Lib/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -726,25 +726,6 @@
         <state relative-caret-position="-5116">
           <caret line="812" column="6" lean-forward="false" selection-start-line="812" selection-start-column="6" selection-end-line="812" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/CheckFieldQuality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="75" lean-forward="false" selection-start-line="14" selection-start-column="75" selection-end-line="14" selection-end-column="75" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#3029#5514#0" expanded="false" />
-            <element signature="e#8229#8532#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/ToolLogging.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -770,18 +751,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/SDSFIE_3_1_ArmyAdaptation_v_1_4_ULS_v1_1.fxl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="25040" column="27" lean-forward="true" selection-start-line="25040" selection-start-column="27" selection-end-line="25040" selection-end-column="27" />
+          <folding>
+            <element signature="n#LineStyleDefinitions#0;n#FeatureCodingDefinitions#0;n#!!top" expanded="false" />
+            <element signature="n#SymbolDefinitions#0;n#FeatureCodingDefinitions#0;n#!!top" expanded="false" />
+            <element signature="n#LabelStyles#0;n#FeatureCodingDefinitions#0;n#!!top" expanded="false" />
+            <element signature="n#LayerDefinitions#0;n#FeatureCodingDefinitions#0;n#!!top" expanded="false" />
+            <element signature="n#FeatureDefinitions#0;n#FeatureCodingDefinitions#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report_notes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python27/ArcGIS10.3/Lib/logging/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="248" column="0" lean-forward="false" selection-start-line="248" selection-start-column="0" selection-end-line="248" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Logs/Errors/2017.5.8.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="30" lean-forward="true" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/ToolLogging.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="106" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="106" />
+        <state relative-caret-position="374">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <marker date="1494269992575" expanded="true" signature="48:730" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="48:283" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="307:372" ph="..." />
+            <marker date="1494269992575" expanded="true" signature="399:730" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/CheckFieldQuality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="17" lean-forward="true" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#2671#5156#0" expanded="false" />
+            <element signature="e#7871#8174#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Exceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="12" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        <state relative-caret-position="603">
+          <caret line="52" column="6" lean-forward="true" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
@@ -790,14 +860,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/CheckForNeeds.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+        <state relative-caret-position="1122">
+          <caret line="141" column="30" lean-forward="true" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
-            <element signature="e#534#2526#0" expanded="false" />
-            <element signature="e#3170#3986#0" expanded="false" />
-            <element signature="e#4047#4990#0" expanded="false" />
-            <element signature="e#5041#5355#0" expanded="false" />
+            <element signature="e#491#2361#0" expanded="false" />
+            <element signature="e#3005#4269#0" expanded="false" />
+            <element signature="e#4330#5460#0" expanded="false" />
+            <element signature="e#6028#6632#0" expanded="false" />
           </folding>
         </state>
       </provider>
