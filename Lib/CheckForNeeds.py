@@ -4,7 +4,9 @@ import os
 from arcpy import AddFieldDelimiters, ListFields, ListFeatureClasses, ListDatasets, env, Point, PointGeometry
 from arcpy.da import InsertCursor, UpdateCursor, Editor, SearchCursor
 
+from Cache import File
 from Exceptions import *
+from LayerStatus import LayerStatus
 from ToolLogging import critical_info
 from config.config import Config
 
@@ -68,21 +70,30 @@ class HQIIS(object):
         self.usar_data = usar_data
         env.workspace = self.usar_data
         self.feature_classes = set()
+        feature_types = config["feature_types"].split(", ")
+        self.layer_status = LayerStatus(self.dashboard_db + os.sep + config["CIP_Layer_Status"])
+        self.layer_status.baseline_the_table(self.__get_insts_sites(), feature_types)
         for ds in ListDatasets():
             for fc in ListFeatureClasses(feature_dataset=ds):
                 self.feature_classes.add(fc)
+        read_cache = File("CheckForNeeds")
+        self.previous_rpuids = read_cache.read()
 
     def curse(self):
         try:
             op_status_f = AddFieldDelimiters(self.hqiis, "OPERATIONAL_STATUS_NAME")
             type_f = AddFieldDelimiters(self.hqiis, "RPA_TYPE_CODE")
             with SearchCursor(self.hqiis, ["INSTALLATION_CODE", "SITE_UID", "RPA_UID", "RPA_PREDOMINANT_CURRENT_USE_CAT"],
-                              where_clause="{0}<>'{1}' AND {2}<>'{3}'".format(op_status_f, "Closed ", type_f, "L")) as cursor:
-                for r in cursor:
+                              where_clause="{0}<>'{1}' AND {2}<>'{3}'".format(op_status_f, "Closed ", type_f, "L")) as s_cursor:
+                for r in s_cursor:
+                    if r[2] in self.previous_rpuids:
+                        continue
                     fcs = self.__is_applicable(r[3])
                     if not fcs:
+                        self.previous_rpuids.append(r[2])
                         continue
                     if not self.__check_exist_in_db(r[2], fcs):
+                        self.layer_status.add_status(r[0], r[1], fcs[0], 2)
                         ft = fcs[0]
                         shape = self.__lookup_geometry(r[1])
                         if not shape:
@@ -93,14 +104,21 @@ class HQIIS(object):
                         need.push()
                         del need
                     else:
-                        print "miss: " + str(r[2])
+                        self.layer_status.add_status(r[0], r[1], fcs[0], 1)
+                    self.previous_rpuids.append(r[2])
         except Exception as e:
+            cache = File("CheckForNeeds", self.previous_rpuids)
+            if not cache.save():
+                self.log.error("Cache did not work.")
+            self.layer_status.write_cache()
             self.log.exception(e.message)
             raise Exit()
+        else:
+            self.layer_status.post_to_table()
 
     def __check_exist_in_db(self, rpuid, fc_list):
         """
-
+        Checks if the rpuid exists in the given database.
         :type fc_list: list
         """
         try:
@@ -130,7 +148,7 @@ class HQIIS(object):
 
     def __lookup_geometry(self, rpsuid):
         """
-
+        Finds the geometry of a site.
         :rtype: geometry object
         """
         try:
@@ -145,7 +163,7 @@ class HQIIS(object):
 
     def __is_applicable(self, catcode):
         """
-
+        Is CIP or Army CIP Priority 1.
         :rtype: list
         """
         try:
@@ -158,3 +176,15 @@ class HQIIS(object):
             return False
         except Exception as e:
             self.log.exception(e.message)
+            raise Exit()
+
+    def __get_insts_sites(self):
+        insts_sites = {}
+        with SearchCursor(self.hqiis, ["INSTALLATION_CODE", "SITE_UID"]) as cursor:
+            for row in cursor:
+                if row[0] not in insts_sites.keys():
+                    insts_sites[row[0]] = [row[1]]
+                    continue
+                if row[1] not in insts_sites[row[0]]:
+                    insts_sites[row[0]].append(row[1])
+        return insts_sites

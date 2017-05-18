@@ -1,13 +1,17 @@
 <?xml version="1.0" ?>
 <parameters>
     <server>
+        <admin>DBO</admin>
+    </server>
+    <databases>
         <dashboard_database>C:\ARGADD_Backend\Test_Data\DashboardDatabase_DEBUG_conntection.sde</dashboard_database>
         <in_data>Database Servers\QSI-LAPTOP-120_DEFAULT_INSTANCE.gds\TEST_63rd_Data (VERSION:DBO.DEFAULT)</in_data>
-    </server>
+    </databases>
     <tool>
         <logs_directory>C:\ARGADD_Backend\Logs</logs_directory>
+        <feature_types>AccessControl, AccessControl_Barricades, AirAccidentZone, AirfieldImaginarySurface, Bridge, Bridge_Footbridge, Building, CemeteryOrBurialSite, CommUtilityNode, CommUtilityNode_Antenna, CommUtilityNode_Manhole, CommUtilitySegment_FiberOptic, CommUtilitySegment_TwistedPair, ControlMonumentPoint, Culvert, ElectricalUtilityNode_Generatr, ElectricalUtilityNode_Junction, ElectricalUtilityNode_Meter, ElectricalUtilityNode_Substatn, ElectricalUtilityNode_Switch, ElectricalUtilityNode_Xformer, ElectricalUtilitySegment, ElevationContour, Fence, FutureProjects, FutureProjects_Building, FutureProjects_Pavement, FutureProjects_ProjectLocation, FutureProjects_RealProperty, FutureProjects_Structure, GasUtilityNode_Meter, GasUtilityNode_Valve, GasUtilitySegment, GeneralUtilityNode_OilWatSprtr, GolfCourse, GroundsMaintenance, HazmatStorageLocation, HazmatStorageLocation_Tank, HazWasteStorageLocation, Installation, LandManagmentZone, LandUse, PavementSection, PavementSection_Airfield, PavementSection_Curb, PavementSection_Driveway, PavementSection_Road, PavementSection_Shoulder, PavementSection_Sidewalks, RailSegment, RestrictedArea, RoadCenterline, StormwaterUtilityNode_Dischrge, StormwaterUtilityNode_Junction, StormWaterUtilitySegment, Structure, Structure_SolidWasteArea, ThermalUtilityNode_Junction, ThermalUtilityNode_Valve, ThermalUtilitySegment, Tower, UtilityFeature_SupportStr, VehicleParking, WasteWaterUtilityArea, WasteWaterUtilityNode_Dischrge, WasteWaterUtilityNode_GreasTrp, WasteWaterUtilityNode_Junction, WasteWaterUtilityNode_Pump, WasteWaterUtilitySegment, WaterUtilityNode_Hydrant, WaterUtilityNode_Junction, WaterUtilityNode_Meter, WaterUtilityNode_Pump, WaterUtilityNode_Tank, WaterUtilityNode_TreatmentPlnt, WaterUtilityNode_Valve, WaterUtilitySegment</feature_types>
     </tool>
-    <dashboard>
+    <dashboard_layers>
         <hqiis>HQIIS</hqiis>
         <sites>Web_Map\Sites</sites>
         <qap_fields_cip>QAP_Fields_CIP_ALL</qap_fields_cip>
@@ -15,5 +19,6 @@
         <field_quality>Field_Quality</field_quality>
         <catcodes>CATCODES_CurrentUse</catcodes>
         <needs>Web_Map\Needs</needs>
-    </dashboard>
+        <CIP_Layer_Status>CIP_Layer_Status</CIP_Layer_Status>
+    </dashboard_layers>
 </parameters>

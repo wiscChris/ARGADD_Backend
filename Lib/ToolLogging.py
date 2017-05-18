@@ -4,9 +4,11 @@ from datetime import datetime
 
 from config.config import Config
 
+config = Config()
+
 __time_now = datetime.now()
 
-log_directory = Config()["logs_directory"]
+log_directory = config["logs_directory"]
 __error_folder = log_directory + os.sep + "Errors"
 __complete_folder = log_directory + os.sep + "Completed"
 log_folder_dir_list = [__error_folder, __complete_folder]

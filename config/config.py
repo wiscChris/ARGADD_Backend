@@ -36,22 +36,35 @@ class Config(object):
 
 class CheckConfig(object):
     def __init__(self):
-        self.parameters = []
+        # TODO does not check server params because they might not arcpy.Exists()
+        self.parameters = {}
+        # Don't touch these!! Referenced in Complete()
+        self.param_groups = ["dashboard_layers", "databases", "tool"]
         self.et = ElementTree.parse(config_file)
-        for element in self.et.findall('.//'):
-            if not list(element):
-                self.parameters.append(element.tag)
+        for pg in self.param_groups:
+            for element in self.et.findall('./{0}/'.format(pg)):
+                if not list(element):
+                    if pg not in self.parameters.keys():
+                        self.parameters[pg] = [element.tag]
+                    else:
+                        self.parameters[pg].append(element.tag)
         self.logs = self.log()
         self.test_config = Config()
 
     def complete(self):
         try:
-            for item in self.parameters:
-                if isinstance(str, item):
-                    if not Exists(self.test_config[item]):
-                        raise InaccessibleData("'{0}' does not exist or is inaccesible.".format(item))
-                else:
-                    raise ConfigFileIssue("There is an issue with the config file. ({0})".format(item))
+            for dict_item in self.parameters:
+                for item in self.parameters[dict_item]:
+                    if isinstance(item, str):
+                        if dict_item == self.param_groups[1]:
+                            if not Exists(self.test_config[item]):
+                                raise InaccessibleData("'{0}' does not exist or is inaccessible.".format(item))
+                        elif dict_item == self.param_groups[0]:
+                            if not Exists(self.test_config['dashboard_database'] + os.sep + self.test_config[item]):
+                                raise InaccessibleData("'{0}' does not exist or is inaccessible.".format(item))
+                    else:
+                        raise ConfigFileIssue("There is an issue with the config file. ({0})".format(item))
+            return True
         except (InaccessibleData, ConfigFileIssue) as e:
             self.logs.error(e.message)
             raise Exit()

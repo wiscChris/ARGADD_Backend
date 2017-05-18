@@ -76,6 +76,7 @@ class FieldAnalysis(object):
             return True
 
     def __installation_field_check(self, installation):
+        """This can only be called within a feature class loop inside self.checker (self.__fc_fields dependency)"""
         installation_f = AddFieldDelimiters(self.__fc, "installationID")
         if installation == 'ALL':
             sql_inst_where = None
